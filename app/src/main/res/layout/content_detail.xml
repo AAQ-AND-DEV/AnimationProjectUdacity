@@ -18,18 +18,21 @@
         >
         <TextView
             android:id="@+id/title"
+            android:layout_margin="@dimen/large_margin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="#CCC"
             android:textSize="@dimen/default_text_size"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="Testing Title String"/>
+            android:textColor="@color/colorPrimaryDark"/>
         <TextView
             android:id="@+id/status"
+            android:layout_margin="@dimen/large_margin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#CCC"
             android:textSize="@dimen/default_text_size"
-            android:textColor="@color/colorPrimaryDark"
-            android:text = "Testing Status String"/>
+            android:textColor="@color/colorPrimaryDark"/>
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
 </layout>

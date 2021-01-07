@@ -20,6 +20,7 @@
             android:id="@+id/radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/custom_button"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +54,9 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
+            app:completedButtonColor="#33CC33"
+            app:textColor="@android:color/black"
+            app:loadingAnimationColor="#999999"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
