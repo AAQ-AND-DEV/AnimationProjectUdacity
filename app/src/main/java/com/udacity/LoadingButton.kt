@@ -13,6 +13,8 @@ import androidx.core.content.withStyledAttributes
 import kotlin.math.min
 import kotlin.properties.Delegates
 
+//some aspects of this class are informed by, though do not copy, https://knowledge.udacity.com/questions/413174
+
 class LoadingButton @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
@@ -123,6 +125,7 @@ class LoadingButton @JvmOverloads constructor(
             paint.color = textColor
             paint.textAlign = Paint.Align.CENTER
             paint.textSize = resources.getDimension(R.dimen.default_text_size)
+            //centering text vertically solution found here: https://stackoverflow.com/a/11121873/8049500
             canvas.drawText(text, widthSize * .5f, (heightSize * .5f - (paint.ascent() +paint.descent())/2), paint)
 
 
